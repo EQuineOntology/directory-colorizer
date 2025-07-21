@@ -3,7 +3,7 @@
     "displayName": "Directory Colorizer",
     "repository": "https://github.com/EQuineOntology/directory-colorizer",
     "description": "Colors VS Code title bar based on workspace directory path patterns",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "publisher": "cfratta",
     "engines": {
         "vscode": "^1.74.0"
