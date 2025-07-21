@@ -1,6 +1,7 @@
 {
     "name": "directory-colorizer",
     "displayName": "Directory Colorizer",
+    "repository": "https://github.com/EQuineOntology/directory-colorizer",
     "description": "Colors VS Code title bar based on workspace directory path patterns",
     "version": "1.2.0",
     "publisher": "cfratta",
