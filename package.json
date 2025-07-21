@@ -92,9 +92,9 @@
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "package": "vsce package",
-        "release:patch": "npm run package && vsce publish patch",
-        "release:minor": "npm run package && vsce publish minor",
-        "release:major": "npm run package && vsce publish major"
+        "release:patch": "vsce publish patch",
+        "release:minor": "vsce publish minor",
+        "release:major": "vsce publish major"
     },
     "devDependencies": {
         "@types/node": "16.x",
