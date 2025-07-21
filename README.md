@@ -5,9 +5,8 @@ A simple VS Code extension that colors your title bar based on workspace directo
 ## Features
 
 - **🎨 Simple Path → Color Mapping**: Just map directory patterns to hex colors
-- **📁 Automatic Detection**: Colors applied instantly when workspace opens
+- **📁 Automatic Detection**: Colors applied automatically when workspace opens
 - **⚙️ Flexible Matching**: Contains, exact match, or ends-with patterns
-- **🔧 Easy Configuration**: Edit mappings directly in VS Code settings UI
 
 ## Configuration
 
@@ -73,34 +72,6 @@ Access via Command Palette (`Ctrl/Cmd+Shift+P`):
 **Ends With**: Path ends with pattern
 - Pattern `"-dev"` matches `/projects/my-app-dev/`
 
-## Example Use Cases
-
-### Project Types
-```json
-{
-    "react": "#61dafb",
-    "vue": "#4fc08d", 
-    "angular": "#dd0031"
-}
-```
-
-### Clients/Teams
-```json
-{
-    "client-a": "#ff6b6b",
-    "client-b": "#4ecdc4",
-    "internal": "#45b7d1"
-}
-```
-
-### Environments
-```json
-{
-    "prod": "#e74c3c",
-    "staging": "#f39c12",
-    "dev": "#2ecc71"
-}
-```
 
 ## Installation
 
@@ -121,7 +92,3 @@ code --install-extension directory-colorizer-1.2.0.vsix
 ## What's Colored
 
 This extension only colors the **title bar** (`titleBar.activeBackground`). It won't interfere with your editor theme, sidebar, or other UI elements - just provides a subtle visual indicator of which project you're working on.
-
-## License
-
-MIT License
