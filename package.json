@@ -3,7 +3,7 @@
     "displayName": "Directory Colorizer",
     "description": "Colors VS Code title bar based on workspace directory path patterns",
     "version": "1.2.0",
-    "publisher": "your-publisher-name",
+    "publisher": "cfratta",
     "engines": {
         "vscode": "^1.74.0"
     },
