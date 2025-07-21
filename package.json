@@ -13,7 +13,7 @@
     ],
     "keywords": [
         "colors",
-        "workspace", 
+        "workspace",
         "directory",
         "titlebar",
         "project"
@@ -32,7 +32,7 @@
                     "description": "Map directory path patterns to title bar colors. Keys are path patterns, values are hex colors.",
                     "default": {
                         "my-project": "#33cc33",
-                        "work": "#3333cc", 
+                        "work": "#3333cc",
                         "personal": "#cc3333"
                     },
                     "patternProperties": {
@@ -52,7 +52,7 @@
                     ],
                     "enumDescriptions": [
                         "Path contains the pattern anywhere",
-                        "Path exactly matches the pattern", 
+                        "Path exactly matches the pattern",
                         "Path ends with the pattern"
                     ],
                     "default": "contains",
@@ -78,7 +78,7 @@
                 "title": "Directory Colorizer: Update Colors"
             },
             {
-                "command": "directoryColorizer.resetColors", 
+                "command": "directoryColorizer.resetColors",
                 "title": "Directory Colorizer: Reset Colors"
             },
             {
@@ -90,11 +90,16 @@
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./"
+        "watch": "tsc -watch -p ./",
+        "package": "vsce package",
+        "release:patch": "npm run package && vsce publish patch",
+        "release:minor": "npm run package && vsce publish minor",
+        "release:major": "npm run package && vsce publish major"
     },
     "devDependencies": {
         "@types/node": "16.x",
         "@types/vscode": "^1.74.0",
+        "@vscode/vsce": "^3.6.0",
         "typescript": "^4.9.4"
     }
 }
